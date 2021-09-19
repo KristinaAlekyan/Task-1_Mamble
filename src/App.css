@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+body{
+  background-image: url(https://www.pngmagic.com/product_images/yellow-background-hd-sm.jpg);
+}
+.App{
+    display: flex;
+    flex-direction: column; 
+    align-content: flex-end;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    align-items: flex-end;  
+}
+.leftText h4 {
+    padding-right: 50px;
+}
+.right{
+    
+    display: flex;
+    flex-direction: column;
+}
+.rightTitle{
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+}
+.rangeContainer{
+    background-color: white;
+    text-align: center;
+}
+form{
+    margin: 20px 30px;
+    display: flex;
+    flex: center;
+    flex-direction: column;
+}
+form input{
+    margin: 20px;
+}
+#continue{
+    margin: 0 20px;
+    padding: 10px;
+    background-color: red;
+    border: none ;
+    border-radius: 0%;
+    color: white;
+}
+.contactDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+    color: #3C6AA6;
+} 
+.contactDiv h4{
+    color: #3C6AA6;
+} 
+
+footer {
+    margin: 40px 0px 5px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    opacity: 0.8
+}
+.footerDiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    color: blue;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    main{
+        flex-direction: column;
+    }
+    .left {
+        justify-content: end;
+    }
+    .right{
+        background-color: white;
+    }
+    .rightTitle{
+        padding-left: 100px;
+    }
+    
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 767px) {  
+    main{
+        flex-direction: column;
+    }
+    .left {
+        justify-content: end;
+    }
+    
+    .right{
+        background-color: blanchedalmond;
+    }
+    footer{
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .rightTitle{
+        padding-left: 100px;
+    }
 }
